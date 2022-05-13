@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.task-input {
+  position: relative;
+}
+
+.input-box, .input-submit {
+  border: 0;
+  font-family: Lato, sans-serif;
+  font-size: 12pt;
+}
+
+.input-box {
+  background: white;
+  color: #2c313d;
+  font-weight: 700;
+  width: 480px;
+  height: 56px;
+  border-radius: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.input-box:focus {
+  box-shadow: 0 0 10px 2000px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.input-submit {
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  background: #f2b1e9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14pt;
+  border-radius: 64px;
+  height: 48px;
+  width: 48px;
+}
+
+.active-tasks {
+  background: rgb(237,247,164);
+  background: linear-gradient(180deg, rgba(237,247,164,1) 0%, rgba(210,231,109,1) 100%);
+}
+
+.completed-tasks {
+  background: rgb(249,220,249);
+  background: linear-gradient(180deg, rgba(249,220,249,1) 0%, rgba(243,190,241,1) 100%);
+}
