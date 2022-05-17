@@ -8,12 +8,12 @@
   font-family: Lato, sans-serif;
   font-size: 12pt;
   display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-.top-bar {
+.top-bar, .task-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
