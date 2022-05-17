@@ -12,10 +12,11 @@ const App: React.FC = () => {
 
     if (todo) {
       setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodo('');
     }
   };
 
-  console.log(todo);
+  console.log(todos);
 
   return (
     <div className="App">
@@ -25,6 +26,10 @@ const App: React.FC = () => {
         </span>
 
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
+
+        {todos.map((task) => (
+          <li>{task.todo}</li>
+        ))}
       </div>
     </div>
   );
