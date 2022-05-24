@@ -26,15 +26,27 @@
   outline: none;
 }
 
+.edit-task {
+  border: 0;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  color: #2c313d;
+  font-weight: 700;
+}
+
+.edit-task:focus {
+  outline: none;
+}
+
 .input-submit {
   right: 5px;
   top: 5px;
   position: absolute;
   background: #f2b1e9;
-  color: white;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 30pt;
+  font-size: 24pt;
   border-radius: 64px;
   height: 48px;
   width: 48px;
@@ -58,4 +70,21 @@
 .completed-tasks {
   background: rgb(249,220,249);
   background: linear-gradient(180deg, rgba(249,220,249,1) 0%, rgba(243,190,241,1) 100%);
+}
+
+.single-task {
+  font-family: inherit;
+  font-weight: 700;
+  color: #2c313d;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.svg-inline--fa {
+  margin: 4px;
+  color: #bc51b2;
 }

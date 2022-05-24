@@ -12,7 +12,12 @@ const TodoList: React.FC<Props> = ({todos, setTodos}: Props) => {
   return (
     <div className="active-tasks">
       {todos.map(task => (
-        <Task />
+        <Task
+          todo={task}
+          key={task.id}
+          todos={todos}
+          setTodos={setTodos}
+        />
       ))}
     </div>
   );

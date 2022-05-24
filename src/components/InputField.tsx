@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import './styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
   todo: string;
@@ -25,7 +27,7 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }: Props) => {
         }
         placeholder="What needs to get done?"
         className="input-box" />
-      <button type="submit" className="input-submit">+</button>
+      <button type="submit" className="input-submit"><FontAwesomeIcon icon={faPlus} /></button>
     </form>
   );
 };
