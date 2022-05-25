@@ -16,7 +16,8 @@
 .top-bar, .task-container {
   display: flex;
   justify-content: space-between;
-  width: 70vw;
+  width: 880px;
+  margin-top: 24px;
 }
 
 .top-bar {
@@ -25,7 +26,6 @@
 
 .task-container {
   align-items: start;
-  margin-top: 24px;
 }
 
 .header {

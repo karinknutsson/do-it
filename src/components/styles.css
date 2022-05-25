@@ -11,7 +11,7 @@
 }
 
 .input-box {
-  background: rgba(255, 255, 255, 0.85);
+  background: white;
   color: #2c313d;
   font-weight: 700;
   width: 480px;
@@ -65,7 +65,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 32vw;
+  width: 432px;
   border-radius: 2px;
 }
 

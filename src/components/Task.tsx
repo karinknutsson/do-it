@@ -50,7 +50,7 @@ const Task: React.FC<Props> = ({todo, todos, setTodos}: Props) => {
             value={editTodo}
             onChange={(event) => setEditTodo(event.target.value)}
             className="edit-task"
-            maxLength={20} />
+            maxLength={22} />
         ) : (
           <span className="single-task-text">{todo.todo}</span>
         )

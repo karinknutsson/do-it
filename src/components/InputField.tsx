@@ -26,7 +26,9 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }: Props) => {
           (event)=>setTodo(event.target.value)
         }
         placeholder="What needs to get done?"
-        className="input-box" />
+        className="input-box"
+        maxLength={22}
+      />
       <button type="submit" className="input-submit"><FontAwesomeIcon icon={faPlus} /></button>
     </form>
   );
