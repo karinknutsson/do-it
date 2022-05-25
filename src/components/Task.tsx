@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Todo } from '../model';
 import './styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,15 +22,35 @@ const Task: React.FC<Props> = ({todo, todos, setTodos}: Props) => {
     ));
   };
 
+  const handleEdit = (event: React.FormEvent, id: number) => {
+    event.preventDefault();
+
+    setTodos(todos.map((todo) =>
+      todo.id === id? {...todo, todo: editTodo } : todo
+    ));
+
+    setEdit(false);
+  };
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, [edit]);
 
   const handleDelete = (id: number) => {
     setTodos(todos = todos.filter(todo => todo.id !== id));
   };
 
   return (
-    <form className="single-task">
+    <form className="single-task" onSubmit={(event) => handleEdit(event, todo.id)}>
       { edit ? (
-          <input className="edit-task" />
+          <input
+            ref={inputRef}
+            value={editTodo}
+            onChange={(event) => setEditTodo(event.target.value)}
+            className="edit-task"
+            maxLength={20} />
         ) : (
           <span className="single-task-text">{todo.todo}</span>
         )

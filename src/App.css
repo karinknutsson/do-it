@@ -13,11 +13,18 @@
   justify-content: start;
 }
 
-.top-bar, .task-container {
+.top-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 70vw;
+}
+
+.task-container {
+  width: 70vw;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .header {
