@@ -28,12 +28,8 @@ const App: React.FC = () => {
 
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
       </div>
-      <div className="task-container">
-        <TodoList todos={todos} setTodos={setTodos} />
-        <div className="completed-tasks">
 
-        </div>
-      </div>
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }

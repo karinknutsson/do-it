@@ -13,18 +13,19 @@
   justify-content: start;
 }
 
-.top-bar {
+.top-bar, .task-container {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 70vw;
 }
 
+.top-bar {
+  align-items: center;
+}
+
 .task-container {
-  width: 70vw;
-  display: flex;
   align-items: start;
-  justify-content: space-between;
+  margin-top: 24px;
 }
 
 .header {
